@@ -1,0 +1,77 @@
+[
+    {
+        "record": {
+            "order_id": "ORD-7006",
+            "order_date": "2026-10-15",
+            "customer_email": "",
+            "city": "Nakuru",
+            "product_sku": "SKU-SUGAR-2KG",
+            "quantity": "2",
+            "unit_price_kes": "330",
+            "status": "PENDING"
+        },
+        "reasons": [
+            "Invalid email: customer_email"
+        ]
+    },
+    {
+        "record": {
+            "order_id": "ORD-7009",
+            "order_date": "2026-10-15",
+            "customer_email": "hassan.m@example.co.ke",
+            "city": "Mombasa",
+            "product_sku": "SKU-RICE-5KG",
+            "quantity": "abc",
+            "unit_price_kes": "1150",
+            "status": "SHIPPED"
+        },
+        "reasons": [
+            "quantity must be numeric"
+        ]
+    },
+    {
+        "record": {
+            "order_id": "ORD-7013",
+            "order_date": "2026-10-16",
+            "customer_email": "otieno.b@example.co.ke",
+            "city": "Kisumu",
+            "product_sku": "SKU-SUGAR-2KG",
+            "quantity": "1",
+            "unit_price_kes": "-330",
+            "status": "DELIVERED"
+        },
+        "reasons": [
+            "unit_price_kes must be greater than zero"
+        ]
+    },
+    {
+        "record": {
+            "order_id": "ORD-7016",
+            "order_date": "2026-10-17",
+            "customer_email": "not-an-email",
+            "city": "Nakuru",
+            "product_sku": "SKU-RICE-5KG",
+            "quantity": "1",
+            "unit_price_kes": "1150",
+            "status": "PENDING"
+        },
+        "reasons": [
+            "Invalid email: customer_email"
+        ]
+    },
+    {
+        "record": {
+            "order_id": "ORD-7023",
+            "order_date": "2026-10-18",
+            "customer_email": "wanjiru.k@example.co.ke",
+            "city": "Nairobi",
+            "product_sku": "SKU-RICE-5KG",
+            "quantity": "1",
+            "unit_price_kes": "1,150",
+            "status": "DELIVERED"
+        },
+        "reasons": [
+            "unit_price_kes must be numeric"
+        ]
+    }
+]
